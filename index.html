@@ -2,286 +2,843 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EV Markez | Digital Growth & Creative Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="EV Markez helps brands grow through digital marketing, affiliate marketing, creative content and modern web solutions."
+        content="EVMarkez helps EV drivers discover charging stations, check charger status, explore electric vehicles and stay updated with EV news and guides."
     >
+
+    <title>EVMarkez | EV Charging Stations, Cars, News & Guides</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container nav-container">
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="container nav-wrapper">
 
             <a href="#home" class="logo">
-                EV<span>Markez</span>
+                <span class="logo-mark">EV</span>Markez
             </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-                ☰
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
 
-            <nav class="nav" id="nav">
+            <nav class="main-nav" id="mainNav">
+
                 <a href="#home">Home</a>
-                <a href="#services">Services</a>
+
+                <a href="#stations">Charging Stations</a>
+
+                <a href="#evs">EVs</a>
+
+                <a href="#news">News & Guides</a>
+
                 <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#contact" class="nav-button">Let's Talk</a>
+
+                <a href="#stations" class="nav-cta">
+                    Find a Charger
+                </a>
+
             </nav>
 
         </div>
+
     </header>
 
 
-    <!-- HERO -->
     <main>
 
+        <!-- =========================
+             HERO
+        ========================== -->
+
         <section class="hero" id="home">
-            <div class="container hero-container">
+
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="container hero-grid">
 
                 <div class="hero-content">
 
-                    <p class="eyebrow">Digital Growth • Creative • Strategy</p>
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        EV charging made easier
+                    </div>
 
                     <h1>
-                        Helping brands
-                        <span>grow smarter.</span>
+                        Find your next
+                        <span>EV charge.</span>
                     </h1>
 
                     <p class="hero-description">
-                        EV Markez creates practical digital strategies, creative
-                        content and online experiences built to help businesses
-                        grow.
+                        Discover electric vehicle charging stations, check
+                        station status, explore EVs and stay informed with
+                        practical EV news and guides.
                     </p>
 
-                    <div class="hero-buttons">
-                        <a href="#services" class="button primary-button">
-                            Explore Services
-                        </a>
 
-                        <a href="#contact" class="button secondary-button">
-                            Work With Us
-                        </a>
+                    <!-- SEARCH -->
+
+                    <form class="hero-search" id="heroSearchForm">
+
+                        <div class="search-icon">
+                            ⌖
+                        </div>
+
+                        <input
+                            type="text"
+                            id="heroSearchInput"
+                            placeholder="Search city, area or charging station"
+                            autocomplete="off"
+                        >
+
+                        <button type="submit">
+                            Find Chargers
+                        </button>
+
+                    </form>
+
+
+                    <div class="popular-searches">
+
+                        <span>Popular:</span>
+
+                        <button
+                            class="quick-search"
+                            data-search="Lahore"
+                        >
+                            Lahore
+                        </button>
+
+                        <button
+                            class="quick-search"
+                            data-search="Islamabad"
+                        >
+                            Islamabad
+                        </button>
+
+                        <button
+                            class="quick-search"
+                            data-search="Karachi"
+                        >
+                            Karachi
+                        </button>
+
+                    </div>
+
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>250+</strong>
+                            <span>Charging Points</span>
+                        </div>
+
+                        <div>
+                            <strong>50+</strong>
+                            <span>EV Models</span>
+                        </div>
+
+                        <div>
+                            <strong>24/7</strong>
+                            <span>EV Discovery</span>
+                        </div>
+
                     </div>
 
                 </div>
 
-                <div class="hero-card">
 
-                    <p class="small-label">What we focus on</p>
+                <!-- HERO APP CARD -->
 
-                    <div class="stat">
-                        <strong>Strategy</strong>
-                        <span>Built around real business goals.</span>
-                    </div>
+                <div class="hero-visual">
 
-                    <div class="stat">
-                        <strong>Creative</strong>
-                        <span>Content designed to get attention.</span>
-                    </div>
+                    <div class="map-card">
 
-                    <div class="stat">
-                        <strong>Growth</strong>
-                        <span>Focused on measurable results.</span>
+                        <div class="map-card-header">
+
+                            <div>
+                                <span class="mini-label">
+                                    Nearby chargers
+                                </span>
+
+                                <h3>
+                                    Charging Map
+                                </h3>
+                            </div>
+
+                            <div class="location-button">
+                                ◎
+                            </div>
+
+                        </div>
+
+
+                        <div class="fake-map">
+
+                            <div class="map-road road-one"></div>
+                            <div class="map-road road-two"></div>
+                            <div class="map-road road-three"></div>
+                            <div class="map-road road-four"></div>
+
+                            <div class="map-pin pin-one working">
+                                ⚡
+                            </div>
+
+                            <div class="map-pin pin-two busy">
+                                ⚡
+                            </div>
+
+                            <div class="map-pin pin-three working">
+                                ⚡
+                            </div>
+
+                            <div class="map-pin pin-four maintenance">
+                                ⚡
+                            </div>
+
+                            <div class="map-location">
+                                <span></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="featured-station">
+
+                            <div class="station-top">
+
+                                <div>
+
+                                    <span class="status status-working">
+                                        <span></span>
+                                        Working
+                                    </span>
+
+                                    <h4>
+                                        EV Power Hub
+                                    </h4>
+
+                                    <p>
+                                        Gulberg • 2.4 km away
+                                    </p>
+
+                                </div>
+
+                                <div class="charger-icon">
+                                    ⚡
+                                </div>
+
+                            </div>
+
+
+                            <div class="featured-details">
+
+                                <div>
+                                    <span>Available</span>
+                                    <strong>4 / 6</strong>
+                                </div>
+
+                                <div>
+                                    <span>Max speed</span>
+                                    <strong>120 kW</strong>
+                                </div>
+
+                                <div>
+                                    <span>Connector</span>
+                                    <strong>CCS2</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
+
         </section>
 
 
-        <!-- SERVICES -->
-        <section class="section" id="services">
+        <!-- =========================
+             TRUST / FEATURE BAR
+        ========================== -->
+
+        <section class="feature-strip">
+
+            <div class="container feature-strip-grid">
+
+                <div class="feature-strip-item">
+                    <span class="feature-icon">⌖</span>
+
+                    <div>
+                        <strong>Discover Chargers</strong>
+                        <p>Find EV charging points near you.</p>
+                    </div>
+                </div>
+
+
+                <div class="feature-strip-item">
+                    <span class="feature-icon">●</span>
+
+                    <div>
+                        <strong>Check Status</strong>
+                        <p>See working, busy or unavailable stations.</p>
+                    </div>
+                </div>
+
+
+                <div class="feature-strip-item">
+                    <span class="feature-icon">⚡</span>
+
+                    <div>
+                        <strong>Charging Details</strong>
+                        <p>Compare speed, connectors and availability.</p>
+                    </div>
+                </div>
+
+
+                <div class="feature-strip-item">
+                    <span class="feature-icon">▤</span>
+
+                    <div>
+                        <strong>EV Knowledge</strong>
+                        <p>Read EV news, guides and ownership tips.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CHARGING STATIONS
+        ========================== -->
+
+        <section class="section stations-section" id="stations">
 
             <div class="container">
 
-                <div class="section-heading">
-                    <p class="eyebrow">What We Do</p>
+                <div class="section-header">
 
-                    <h2>
-                        Digital solutions designed
-                        for growth.
-                    </h2>
+                    <div>
+
+                        <p class="eyebrow">
+                            Charging Network
+                        </p>
+
+                        <h2>
+                            Find a charger that
+                            <span>works for you.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <a href="#stations" class="text-link">
+                        View all stations
+                        <span>→</span>
+                    </a>
+
                 </div>
 
-                <div class="services-grid">
 
-                    <article class="service-card">
-                        <span class="service-number">01</span>
+                <!-- STATION TOOLBAR -->
 
-                        <h3>Digital Marketing</h3>
+                <div class="station-toolbar">
 
-                        <p>
-                            Marketing strategies designed to reach the right
-                            audience, improve visibility and create meaningful
-                            growth.
+                    <div class="station-search">
+
+                        <span>⌕</span>
+
+                        <input
+                            type="text"
+                            id="stationSearch"
+                            placeholder="Search stations or cities..."
+                        >
+
+                    </div>
+
+
+                    <div class="status-filters" id="statusFilters">
+
+                        <button
+                            class="filter-button active"
+                            data-status="all"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-status="working"
+                        >
+                            <span class="filter-dot working-dot"></span>
+                            Working
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-status="busy"
+                        >
+                            <span class="filter-dot busy-dot"></span>
+                            Very Busy
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-status="maintenance"
+                        >
+                            <span class="filter-dot maintenance-dot"></span>
+                            Maintenance
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-status="offline"
+                        >
+                            <span class="filter-dot offline-dot"></span>
+                            Not Working
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GENERATED WITH JAVASCRIPT -->
+
+                <div
+                    class="station-grid"
+                    id="stationGrid"
+                ></div>
+
+
+                <div
+                    class="empty-state"
+                    id="emptyState"
+                    hidden
+                >
+                    <div>⚡</div>
+
+                    <h3>No charging stations found</h3>
+
+                    <p>
+                        Try another city, station name or status.
+                    </p>
+                </div>
+
+
+                <div class="station-legend">
+
+                    <span>Station status:</span>
+
+                    <div>
+                        <span class="legend-dot working-dot"></span>
+                        Working
+                    </div>
+
+                    <div>
+                        <span class="legend-dot busy-dot"></span>
+                        Very Busy
+                    </div>
+
+                    <div>
+                        <span class="legend-dot maintenance-dot"></span>
+                        Maintenance
+                    </div>
+
+                    <div>
+                        <span class="legend-dot offline-dot"></span>
+                        Not Working
+                    </div>
+
+                    <div>
+                        <span class="legend-dot closed-dot"></span>
+                        Closed
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EV EXPLORER
+        ========================== -->
+
+        <section class="section ev-section" id="evs">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Explore Electric
                         </p>
+
+                        <h2>
+                            Find the right EV
+                            <span>for your journey.</span>
+                        </h2>
+
+                    </div>
+
+                    <a href="#evs" class="text-link dark-link">
+                        Explore EVs
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div class="ev-feature-grid">
+
+                    <article class="ev-feature large">
+
+                        <div class="ev-number">
+                            01
+                        </div>
+
+                        <div class="ev-feature-content">
+
+                            <span class="ev-category">
+                                EV Database
+                            </span>
+
+                            <h3>
+                                Compare electric vehicles.
+                            </h3>
+
+                            <p>
+                                Explore battery capacity, range, charging
+                                speed, performance and other important EV
+                                specifications.
+                            </p>
+
+                            <a href="#evs">
+                                Browse EV Models →
+                            </a>
+
+                        </div>
+
+                        <div class="car-silhouette">
+                            <div class="car-body"></div>
+                            <div class="wheel wheel-left"></div>
+                            <div class="wheel wheel-right"></div>
+                        </div>
+
                     </article>
 
-                    <article class="service-card">
-                        <span class="service-number">02</span>
 
-                        <h3>Affiliate Marketing</h3>
+                    <article class="ev-feature">
 
-                        <p>
-                            Affiliate campaigns, content and conversion-focused
-                            strategies that connect products with customers.
-                        </p>
+                        <div class="ev-number">
+                            02
+                        </div>
+
+                        <div class="ev-feature-content">
+
+                            <span class="ev-category">
+                                EV Comparison
+                            </span>
+
+                            <h3>
+                                Compare side by side.
+                            </h3>
+
+                            <p>
+                                Quickly compare range, battery size and
+                                charging speeds between EV models.
+                            </p>
+
+                        </div>
+
                     </article>
 
-                    <article class="service-card">
-                        <span class="service-number">03</span>
 
-                        <h3>Creative Content</h3>
+                    <article class="ev-feature">
 
-                        <p>
-                            Scroll-stopping creative concepts for social media,
-                            advertising, websites and digital campaigns.
-                        </p>
-                    </article>
+                        <div class="ev-number">
+                            03
+                        </div>
 
-                    <article class="service-card">
-                        <span class="service-number">04</span>
+                        <div class="ev-feature-content">
 
-                        <h3>Web Solutions</h3>
+                            <span class="ev-category">
+                                Buying Guides
+                            </span>
 
-                        <p>
-                            Clean, fast and responsive websites focused on
-                            usability, credibility and conversion.
-                        </p>
+                            <h3>
+                                Make a smarter EV choice.
+                            </h3>
+
+                            <p>
+                                Understand what matters before purchasing
+                                your first or next electric vehicle.
+                            </p>
+
+                        </div>
+
                     </article>
 
                 </div>
 
             </div>
+
         </section>
 
 
-        <!-- ABOUT -->
-        <section class="section about-section" id="about">
+        <!-- =========================
+             NEWS & GUIDES
+        ========================== -->
 
-            <div class="container about-grid">
+        <section class="section news-section" id="news">
 
-                <div>
-                    <p class="eyebrow">About EV Markez</p>
+            <div class="container">
 
-                    <h2>
-                        Strategy without unnecessary complexity.
-                    </h2>
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            EV Knowledge
+                        </p>
+
+                        <h2>
+                            Latest from
+                            <span>EVMarkez.</span>
+                        </h2>
+
+                    </div>
+
+                    <a href="#news" class="text-link">
+                        All articles
+                        <span>→</span>
+                    </a>
+
                 </div>
 
-                <div class="about-content">
+
+                <div class="articles-grid">
+
+
+                    <article class="article-card article-featured">
+
+                        <div class="article-image article-image-one">
+
+                            <span class="article-badge">
+                                Charging Guide
+                            </span>
+
+                            <div class="article-graphic">
+                                ⚡
+                            </div>
+
+                        </div>
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+                                Charging
+                                <span>•</span>
+                                6 min read
+                            </div>
+
+                            <h3>
+                                How long does it actually take to charge
+                                an electric vehicle?
+                            </h3>
+
+                            <p>
+                                Understand slow, fast and rapid EV charging
+                                and what affects your charging time.
+                            </p>
+
+                            <a href="#">
+                                Read guide →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="article-card">
+
+                        <div class="article-image article-image-two">
+
+                            <span class="article-badge">
+                                EV Guide
+                            </span>
+
+                            <div class="article-graphic">
+                                EV
+                            </div>
+
+                        </div>
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+                                Buying Guide
+                                <span>•</span>
+                                8 min read
+                            </div>
+
+                            <h3>
+                                What to check before buying your first EV
+                            </h3>
+
+                            <a href="#">
+                                Read article →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="article-card">
+
+                        <div class="article-image article-image-three">
+
+                            <span class="article-badge">
+                                Battery
+                            </span>
+
+                            <div class="article-graphic">
+                                ▰
+                            </div>
+
+                        </div>
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+                                Ownership
+                                <span>•</span>
+                                5 min read
+                            </div>
+
+                            <h3>
+                                EV battery health: what owners need to know
+                            </h3>
+
+                            <a href="#">
+                                Read article →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT / MISSION
+        ========================== -->
+
+        <section class="mission-section" id="about">
+
+            <div class="container mission-grid">
+
+                <div>
+
+                    <p class="eyebrow light-eyebrow">
+                        Why EVMarkez
+                    </p>
+
+                    <h2>
+                        Making electric mobility
+                        easier to understand.
+                    </h2>
+
+                </div>
+
+
+                <div class="mission-copy">
 
                     <p>
-                        EV Markez is a digital-focused company helping businesses
-                        turn ideas into stronger online experiences.
+                        EVMarkez is being built as a practical platform for
+                        electric vehicle drivers and anyone interested in
+                        switching to electric.
                     </p>
 
                     <p>
-                        We combine marketing, creative thinking and technology
-                        to build simple solutions that are useful, scalable and
-                        focused on results.
+                        Our goal is to make it easier to discover chargers,
+                        understand charging status, compare EVs and find useful
+                        EV information in one place.
                     </p>
 
-                    <a href="#contact" class="text-link">
-                        Start a project →
+                    <a href="#stations">
+                        Find a charging station →
                     </a>
 
                 </div>
 
             </div>
+
         </section>
 
 
-        <!-- WORK -->
-        <section class="section" id="work">
+        <!-- =========================
+             CTA
+        ========================== -->
 
-            <div class="container">
+        <section class="cta-section">
 
-                <div class="section-heading">
-                    <p class="eyebrow">Selected Work</p>
+            <div class="container cta-box">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Start Exploring
+                    </p>
 
                     <h2>
-                        Projects we're proud of.
+                        Your EV journey starts here.
                     </h2>
 
-                    <p class="section-description">
-                        We'll add real EV Markez projects here as the portfolio
-                        grows.
+                    <p>
+                        Find charging stations and discover the information
+                        you need for easier electric driving.
                     </p>
-                </div>
-
-                <div class="work-grid">
-
-                    <article class="work-card">
-                        <div class="project-image">
-                            <span>Project 01</span>
-                        </div>
-
-                        <div class="project-info">
-                            <h3>Digital Campaign</h3>
-                            <p>Marketing • Creative</p>
-                        </div>
-                    </article>
-
-                    <article class="work-card">
-                        <div class="project-image">
-                            <span>Project 02</span>
-                        </div>
-
-                        <div class="project-info">
-                            <h3>Affiliate Growth</h3>
-                            <p>Strategy • Content</p>
-                        </div>
-                    </article>
-
-                    <article class="work-card">
-                        <div class="project-image">
-                            <span>Project 03</span>
-                        </div>
-
-                        <div class="project-info">
-                            <h3>Web Experience</h3>
-                            <p>Design • Development</p>
-                        </div>
-                    </article>
 
                 </div>
 
-            </div>
-        </section>
-
-
-        <!-- CONTACT -->
-        <section class="contact-section" id="contact">
-
-            <div class="container contact-container">
-
-                <p class="eyebrow">Let's Work Together</p>
-
-                <h2>
-                    Have a project in mind?
-                    <span>Let's talk.</span>
-                </h2>
-
-                <p>
-                    Tell us what you're working on and how EV Markez can help.
-                </p>
-
-                <!-- Replace with your real email -->
-                <a
-                    href="mailto:your-email@example.com"
-                    class="button contact-button"
-                >
-                    Get In Touch
+                <a href="#stations" class="cta-button">
+                    Find EV Chargers
+                    <span>→</span>
                 </a>
 
             </div>
@@ -291,18 +848,72 @@
     </main>
 
 
-    <!-- FOOTER -->
-    <footer>
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
-        <div class="container footer-container">
+    <footer class="site-footer">
 
-            <a href="#home" class="logo">
-                EV<span>Markez</span>
-            </a>
+        <div class="container">
 
-            <p>
-                © <span id="year"></span> EV Markez. All rights reserved.
-            </p>
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="logo footer-logo">
+                        <span class="logo-mark">EV</span>Markez
+                    </a>
+
+                    <p>
+                        Charging stations, EV discovery,
+                        news and practical electric vehicle guides.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div>
+
+                        <h4>Explore</h4>
+
+                        <a href="#stations">Charging Stations</a>
+                        <a href="#evs">EV Models</a>
+                        <a href="#news">EV News</a>
+                        <a href="#news">EV Guides</a>
+
+                    </div>
+
+
+                    <div>
+
+                        <h4>EVMarkez</h4>
+
+                        <a href="#about">About</a>
+                        <a href="#about">Contact</a>
+                        <a href="#">Report a Station</a>
+                        <a href="#">Add a Charging Point</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span> EVMarkez.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Built for the electric future.
+                </p>
+
+            </div>
 
         </div>
 
